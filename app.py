@@ -30,10 +30,10 @@ def analyze_sentiment(text):
     polarity = blob.sentiment.polarity
     subjectivity = blob.sentiment.subjectivity
 
-    if polarity > 0.05:
+    if polarity > 0:
         sentiment = "Positive"
 
-    elif polarity < -0.05:
+    elif polarity < 0:
         sentiment = "Negative"
 
     else:
